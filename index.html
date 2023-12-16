@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-vista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/356940580b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <style>
+        
+        section{
+            background:linear-gradient(45deg,#FAE6FA,#F0FFFF,#d7ffff,#c8fdfd,#d7ffff,#d7ffff,#F0F8FF,#fff7fa,#FFF0F5,#d7ffff,#bcfdfd);
+        }
+        #container-1{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            width:100%;
+        }
+        .header-logo img{
+            width:200px;
+            height:180px;
+        }
+        #container-1 .menu{
+            display:flex;
+            width:500px;
+            justify-content: space-between;
+        }
+        #container-1 .register{
+            width:180px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #container-1 a{
+            text-decoration: none;
+            color:rgb(95, 95, 95);
+            font-weight: 600;
+        }
+        #container-1 a:hover{
+            color:rgb(0, 0, 0);
+        }
+        .register button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:120px;
+            padding:10px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+        }
+        #container-2{
+            width:90%;
+            margin:50px 180px 20px 180px;
+
+        }
+        .body-section-1{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .body-section-1-text{
+            width:45%;
+        }
+        .body-section-1-text h1{
+            font-weight: 400;
+            font-size:90px;
+            margin-bottom: 2rem;
+        }
+        .body-section-1-button{
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+        }
+        .body-section-1-button-1 button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:180px;
+            padding:20px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+        }
+        .body-section-1-button-2 button{
+            background-color:transparent;
+            width:180px;
+            padding:15px;
+            border:transparent;
+            color:black;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .course-users{
+            display: flex;
+            justify-content: space-around;
+            width:600px;
+            margin-top: 6rem;
+        }
+        .online-course{
+            width:40%;
+            height:50%;
+            background-color: #e3fafa;
+            border-radius: 0.5rem;
+            padding:2rem 3rem;
+        }
+        .course-users h1{
+            font-weight: 500;
+            font-size:4rem;
+            margin-bottom: 0rem;
+        }
+        .active-users{
+            width:40%;
+            height:50%;
+            background-color: #e3fafa;
+            border-radius: 0.5rem;
+            padding:2rem 3rem;
+        }
+        #container-3{
+            text-align: center;
+            margin: auto;
+            margin-top: 8%;
+            width:75%;
+            
+            
+        }
+        .body-section-2{
+            background:linear-gradient(45deg,#2399cb,#d7ffff,#a3ffff);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            border-radius: 1rem;
+        }
+        .body-section-2-text{
+            width:50%;
+        }
+        .body-section-2-text h1{
+            font-weight: 400;
+            font-size:60px;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .body-section-2-text p{
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .body-section-2-button{
+            display: flex;
+            margin-top: 3rem;
+            align-items: center;
+        }
+        .body-section-2-button-1 button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:180px;
+            padding:20px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+        }
+        .body-section-2-button-2 button{
+            background-color:transparent;
+            width:180px;
+            padding:15px;
+            border:transparent;
+            color:black;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .body-section-2-picture img{
+            
+            margin-top: 2rem;
+            width:50rem;
+        }
+        #container-4{
+            margin: auto;
+            width:75%;
+            margin-top: 5%;
+            
+        }
+        .body-section-3{
+            justify-content: space-between;
+            display: flex;
+        }
+        
+        .body-section-3-part1 h1{
+            font-weight: 400;
+            font-size:60px;
+            text-align: left;
+            margin-bottom: 2rem;
+            width:45rem;
+        }
+        .body-section-3-image-text h1{
+            font-weight: 500;
+            font-size:30px;
+            text-align: left;
+            margin: 2rem;
+            width:20rem;
+        }
+        .body-section-3-part1{
+            width:55%;
+        }
+        .body-section-3-part1 p{
+            margin-bottom: 2rem;
+        }
+        .body-section-3-image{
+            background:linear-gradient(45deg,#d7ffff,#a3ffff,#d7ffff,#c8fdfd,#d7ffff,#d7ffff,#F0F8FF,#fff7fa,#FFF0F5,#d7ffff,#bcfdfd);
+            border-radius: 1rem;
+            display: flex;
+            width:90%;
+
+        }
+        .body-section-3-image-image img{
+            position: relative;
+            width:18rem;
+
+        }
+        .body-section-3-button button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:150px;
+            padding:15px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+            margin: 0rem 2rem 2rem 2rem;
+            font-size: 1.1rem;
+
+        }
+        .body-section-3-part2{
+            display: flex;
+            width:48%;
+        }
+        
+        .box-1 .box{
+            width:4rem;
+            height:4rem;
+            border-radius: 0.5rem;
+            margin-top: 5rem;
+            margin-left: 0rem;
+            background:linear-gradient(45deg,#467c7c,#0070a0,#46e2e2,#7fa6f5);
+
+        }
+        .box-2 .box1{
+            margin-top: 4.5rem;
+            margin-left: 2rem;
+        }
+        .box-2 .box1 h1{
+            font-weight: 500;
+            font-size:30px;
+            text-align: left;
+        }
+        #container-5{
+            text-align: center;
+            margin: auto;
+            margin-top: 8%;
+            width:75%;
+        }
+        .body-section-4{
+            text-align: center;
+        }
+        .body-section-4 .browse_by{
+            margin: auto;
+            margin-bottom: 2rem;
+            width:45rem;
+            text-align: center;
+
+        }
+        .body-section-4 .browse_by h1{
+            font-weight: 400;
+            font-size:60px;
+            margin-bottom: 2rem;
+        }
+        .category{
+            display: flex;
+            justify-content: space-between;
+            margin: 4rem 0rem;
+        }
+        .category-1{
+            width:20rem;
+            padding:2rem;
+            border: 1px solid rgb(189, 189, 189);
+            border-radius: 0.5rem;
+        }
+        .browse_all button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:150px;
+            padding:15px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+            margin: 0rem 2rem 2rem 2rem;
+            font-size: 1.1rem;
+
+        }
+        #container-6{
+            margin: auto;
+            margin-top: 8%;
+            width:75%;
+        }
+        .body-section-5{
+            display:flex;
+        }
+        .body-section-5-part1{
+            width:50%;
+        }
+        .body-section-5-part2{
+            width:50%;
+        }
+        .body-section-5-part1 h1{
+            font-weight: 400;
+            font-size:60px;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .body-section-5-part1 .row h1{
+            font-weight: 400;
+            font-size:40px;
+            text-align: left;
+            margin-bottom: 2rem;
+            color:#9683EC;
+        }
+        .body-section-5-part1 button{
+            background-color: #9683EC;
+            border-radius: 50px;
+            width:180px;
+            padding:15px;
+            border:transparent;
+            color:white;
+            font-weight: 500;
+            margin-right: 1rem;
+            margin-top: 4rem;
+            font-size: 1.1rem;
+        }
+        .body-section-5-part2 img{
+            position: absolute;
+            top:208rem;
+            left:70rem;
+            width:40rem;
+        }
+        .body-section-5-part2-background{
+            border-radius: 1rem;
+            margin-left: 8rem;;
+            width:38rem;
+            height: 45rem;
+            background:linear-gradient(45deg,#d7ffff,#a3ffff,#d7ffff,#c8fdfd,#d7ffff,#d7ffff,#F0F8FF,#fff7fa,#FFF0F5,#d7ffff,#bcfdfd);
+        }
+        #container-7{
+            margin: auto;
+            margin-top: 8%;
+            width:75%;
+        }
+        .body-section-6{
+            display:flex;
+            justify-content: space-between;
+        }
+        .body-section-6-part1{
+            width:45%;
+        }
+        .body-section-6-part1 i{
+            padding-top: 2rem;
+            text-align: center;
+            width:4rem;
+            height:4rem;
+            border-radius: 0.5rem;
+            background-color: #9683EC ;
+        }
+        .body-section-6-part2{
+            width:45%;
+        }
+        .body-section-6-part1 .row h1{
+            font-weight: 400;
+            font-size:35px;
+            text-align: left;
+            margin-bottom: 1rem;
+            color:black;
+        }
+        .body-section-6-part2 h1{
+            font-weight: 400;
+            font-size:60px;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .body-section-6-part2-background{
+            border-radius: 1rem;
+            margin-top:6rem ;
+            width:100%;
+            height: 15rem;
+            background:linear-gradient(45deg,#d7ffff,#a3ffff,#d7ffff,#c8fdfd,#d7ffff,#d7ffff,#F0F8FF,#fff7fa,#FFF0F5,#d7ffff,#bcfdfd);
+        }
+        .body-section-6-part2 img{
+            position: absolute;
+            top:280rem;
+            left:93rem;
+            width:24rem;
+        }
+
+        
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- header start-->
+    <section>
+        <header>
+            <div class="" id="container-1">
+                <!-- header menu start -->
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/images/edu-vista-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div>
+                        <a class="" href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="about_us.html">About</a>
+                    </div>
+                    <div>
+                        <a href="course.html">Courses</a>
+                    </div>
+                    <div>
+                        <a href="pricing_plan.html">Pages <i class="fi-rr-angle-small-right"></i></a>
+                    </div>
+                    <div>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="register">
+                    <div>
+                        <a href="#">Login</a>
+                    </div>
+                    <div>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <!-- header manu end -->
+            </div>
+            
+        </header>
+        <!-- header end -->
+        <!-- body section start -->
+            <div class="" id="container-2">
+                <div class="body-section-1">
+                    <div class="body-section-1-text">
+                        <h1>The Best Online Course You'll Find</h1>
+                        <p>the best online course</p>
+                        <div class="body-section-1-button">
+                            <div class="body-section-1-button-1">
+                               <a href="#"><button>Get Started</button></a> 
+                            </div>
+                            <div class="body-section-1-button-2">
+                                <a href="#"><button><i class="fa-solid fa-play"></i> Watch Video</button></a>  
+                            </div>
+                        </div>
+                        <div class="course-users">
+                            <div class="online-course">
+                                <h1>940+</h1>
+                                <p>Online Course</p>
+                            </div>
+                            <div class="active-users">
+                                <h1>17 K</h1>
+                                <p>Active Users</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-section-1-picture">
+                        <img src="assets/images/girl-with-charming-smile-wears.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <div id="container-3">
+        <div class="body-section-2">
+            <div class="body-section-2-picture">
+                <img src="assets/images/thankful-clever-student-feels.png" alt="">
+            </div>
+            <div class="body-section-2-text">
+                <h1>Providing Amazing Online Courses</h1>
+                <p>the best online course</p>
+                <div class="body-section-2-button">
+                    <div class="body-section-2-button-1">
+                        <a href="#"><button><i class="fa-solid fa-play"></i> Watch Video</button></a>  
+                    </div>
+                    <div class="body-section-2-button-2">
+                        <a href="#"><button><i class="fa-solid fa-phone"></i> Contact Us</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-4">
+        <div class="body-section-3">
+            <div class="body-section-3-part1">
+                <h1>Premium Learning Experience</h1>
+                <p>the best online course</p>
+                <div class="body-section-3-image">
+                    <div class="body-section-3-image-text">
+                        <h1>Quality online courses for all!</h1>
+                        <div class="body-section-3-button">
+                            <a href="#"><button>Get Started</button></a> 
+                        </div>
+                    </div>
+                    <div class="body-section-3-image-image">
+                        <img src="assets/images/student.avif" alt="" >
+                    </div>
+                </div>
+            </div>
+            <div class="body-section-3-part2">
+
+                <div class="box-1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="box-2">
+
+                    <div class="box1">
+                        <h1>Online courses from experts</h1>
+                        <p>the best online course</p>
+                    </div>
+                    
+                    <div class="box1">
+                        <h1>Over 500+ high quality topics</h1>
+                        <p>the best online course</p>
+                    </div>
+                    
+                    <div class="box1">
+                        <h1>occasional video update</h1>
+                        <p>the best online course</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container-5">
+        <div class="body-section-4">
+            <div class="browse_by">
+                <h1>Browse By category</h1>
+                <p>It takes a whole lot of just or targeted chocolate. For even the door is advertised. Therefore, the need for a large lion, or a large lake of water.</p>
+            </div>
+            <div class="category">
+                <div class="category-1 ">
+                    <i class="fa-solid fa-pencil fa-2xl mb-5" style="color:  #9683EC;"></i>
+                    <h1>Writing</h1>
+                    <p>Customer service is very important, as a result of customer support</p>
+                </div>
+                <div class="category-1">
+                    <i class="fa-solid fa-book-open-reader fa-2xl mb-5" style="color:  #9683EC;"></i>
+                    <h1>Design</h1>
+                    <p>Customer service is very important, as a result of customer support</p>
+                </div>
+                <div class="category-1">
+                    <i class="fa-solid fa-earth-americas fa-2xl mb-5"  style="color:  #9683EC;"></i>
+                    <h1>Website</h1>
+                    <p>Customer service is very important, as a result of customer support</p>
+                </div>
+                <div class="category-1">
+                    <i class="fa-solid fa-address-card fa-2xl mb-5" style="color:  #9683EC;"></i>
+                    <h1>Business</h1>
+                    <p>Customer service is very important, as a result of customer support</p>
+                </div>
+            </div>
+            <div class="browse_all">
+                <a href="#">
+                    <button>Browse All</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="container-6">
+        <div class="body-section-5">
+            <div class="body-section-5-part1">
+                <h1>Experience Interactive learning</h1>
+                <p>As a real estate agent, it was a very important layer. It takes a whole lot of just or targeted chocolate. For even the door is advertised. Therefore, the need for a large lion, or a large lake of water.</p>
+                <div class="row justify-content-between" >
+                    <div class="col-sm-5">
+                        <h1>Verified</h1>
+                        <p>As a real estate agent, it was a very important layer.</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h1>Powerful</h1>
+                        <p>As a real estate agent, it was a very important layer.</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-sm-5">
+                        <h1>Easiest</h1>
+                        <p>As a real estate agent, it was a very important layer.</p>
+                    </div>
+                    <div class="col-sm-5">
+                        <h1>Trusted</h1>
+                        <p>As a real estate agent, it was a very important layer.</p>
+                    </div>
+                </div>
+                <a href="#"><button>All Features</button></a>
+            </div>
+            <div class="body-section-5-part2">
+                <div class="body-section-5-part2-background">
+                </div>
+                <img src="assets/images/hvad-er-en.png" alt="">
+                
+            </div>
+
+        </div>
+    </div>
+    <div id="container-7">
+        <div class="body-section-6">
+            <div class="body-section-6-part1">
+                <div class="row justify-content-between mb-4 ">
+                    <div class="col-sm-6">
+                        <i class="fa-regular fa-flag fa-2xl mb-3" style="color: #ffffff;"></i>
+                        <h1>Expert Tutor</h1>
+                        <p>Customer service is very important, as a result of customer support. Sometimes there's a little bit of heat</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa-regular fa-flag fa-2xl mb-3" style="color: #ffffff;"></i>
+                        <h1>Lifetime Access</h1>
+                        <p>Customer service is very important, as a result of customer support. Sometimes there's a little bit of heat</p>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-sm-6">
+                        <i class="fa-regular fa-flag fa-2xl mb-3" style="color: #ffffff;"></i>
+                        <h1>Updated Material
+                        </h1>
+                        <p>Customer service is very important, as a result of customer support. Sometimes there's a little bit of heat</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fa-regular fa-flag fa-2xl mb-3" style="color: #ffffff;"></i>
+                        <h1>Weekly Event
+                        </h1>
+                        <p>Customer service is very important, as a result of customer support. Sometimes there's a little bit of heat</p>
+                    </div>
+                </div>
+                <div class="body-section-1-button-1 mt-5">
+                    <a href="#"><button>Get Started</button></a> 
+                 </div>
+            </div>
+            <div class="body-section-6-part2">
+                <h1>Making Your Learning More Enjoyable
+                </h1>
+                <p>The customer is very important, the customer will be followed by the customer. There is no such thing as a keyboard. The most important thing in life is to drink. It has been said that he needs some knowledge of the world, and that the players of Euismod need success. Maecenas mattis, dui condimentum aquet eleifend, for there is no quiver now.</p>
+                <div class="body-section-6-part2-background">
+                </div>
+                <img src="assets/images/student.avif" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="container-8">
+        <div class="body-section-7">
+            <div class="row">
+                <div class="col-sm-9">
+
+                </div>
+                <div class="col-sm-3">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>

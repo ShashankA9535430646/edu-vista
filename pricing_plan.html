@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing_plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/356940580b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <style>
+/* Default styles for larger screens */
+#pages_p {
+    z-index: 0;
+    background: url(assets/images/students1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    opacity: 0.9;
+}
+
+#container-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+header {
+    z-index: 10;
+}
+
+.header-logo img {
+    width: 200px;
+    height: 180px;
+}
+
+#container-1 .menu {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+#container-1 .register {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-1 a {
+    text-decoration: none;
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+}
+
+#container-1 a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.register button {
+    background-color: #9683EC;
+    border-radius: 50px;
+    width: 120px;
+    padding: 10px;
+    border: transparent;
+    color: white;
+    font-weight: 500;
+}
+
+#container-2 {
+    margin: auto;
+    margin-top: 8%;
+    width: 75%;
+}
+
+.tag {
+    text-align: center;
+    background-color: white;
+    width: 40rem;
+    height: 11rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.tag h1 {
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.body-section-1 {
+    position: relative;
+    width: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10%;
+}
+
+.body-section-1 h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    margin-top: 6rem;
+}
+
+.body-section-1 p {
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans-1 {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 1rem;
+    border: 5px solid rgb(189, 189, 189);
+}
+
+.plans-1 h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.plans-1 p {
+    margin-bottom: 2rem;
+}
+
+.plans-1 button {
+    background-color: #9683EC;
+    border-radius: 50px;
+    width: 150px;
+    padding: 15px;
+    border: transparent;
+    color: white;
+    font-weight: 500;
+    margin: 2rem 2rem 0rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    #container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 150px;
+        height: 135px;
+    }
+
+    #container-1 .menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #container-1 .register {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .register button {
+        width: 100%;
+    }
+
+    #container-2 {
+        width: 90%;
+    }
+
+    .tag {
+        width: 80%;
+    }
+
+    .body-section-1 {
+        width: 80%;
+    }
+
+    .plans {
+        flex-direction: column;
+    }
+
+    .plans-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*         
+        Form section 
+    .form-section
+    {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    margin: auto;
+    width:75%;
+    margin-top:8rem;
+    }
+    .lform 
+    {
+        padding: 20px 50px;
+        width: 50%;
+    }
+    .rform{
+        width:45%;
+        height:20%;
+    }
+    .form-section .lform h1
+    {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-size: 40px;
+    }
+    .form-section .lform p
+    {
+        padding-top: 3px;
+        font-weight: 500;
+        opacity: .8;
+        font-size: 17px;
+        color: gray;
+    }
+    .form-section .lform h4 i 
+    {
+        color: rgba(119, 48, 170, 0.607);
+        font-size: 25px;
+    }
+    .form-section .lform h4 i:hover
+    {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .form-section .lform h4
+    {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    /* form css  */
+
+
+    /* .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin-right: 150px;
+        height: 410px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 6px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group .form-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-group .form-row .form-group {
+        width: 48%;
+    }
+    .form-group label 
+    {
+        color: rgb(175, 169, 169);
+        font-size: 14px;
+    }
+
+    .form-group button {
+        width: 32%;
+        padding: 10px;
+        margin-top: 8px;
+        background-color: rgba(119, 48, 170, 0.607);
+        color: #fff;
+        margin-left: 140px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    } */
+
+
+/* Media query */
+/* Default styles */
+
+/* Add your default styles here */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    #container-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 150px;
+        height: 135px;
+    }
+
+    #container-1 .menu {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #container-1 .register {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .register button {
+        width: 100%;
+    }
+
+    #container-2 {
+        width: 90%;
+    }
+
+    .tag {
+        width: 80%;
+    }
+
+    .body-section-1 {
+        width: 80%;
+    }
+
+    .plans {
+        flex-direction: column;
+    }
+
+    .plans-1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+
+    
+}
+        /* contact section CSS */
+        .contact-section
+        {
+            text-align: center;
+            /* max-width: 100%; */
+            /* margin-left: 120px;
+            margin-right: 120px;
+            margin-top: 50px; */
+            padding: 20px;
+            /* border: 1px solid #ccc; */
+            width: 1000px;
+            border: none;
+            margin-left: 250px;
+            border-radius: 8px;
+            /* background: radial-gradient(ellipse at 400% 200%, rgba(119, 48, 170, 0.607) , #ccfbff) ; */
+            background: radial-gradient(ellipse at 100% 400%, #ef96c5 , #ccfbff) ;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-top: 50px;
+        }
+        .contact-section h1 
+        {
+            color: #333;
+            font-weight: 600;
+            letter-spacing: 1px;
+            
+        }
+        .contact-section p 
+        {
+            padding-top: 15px;
+            letter-spacing: .5px;
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            width: 12%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: rgba(119, 48, 170, 0.607);
+            color: #fff;
+            /* margin-left: 140px; */
+            font-size: 14px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .btn:hover 
+        {
+            background: radial-gradient(ellipse at 100% 400%, #ef96c5 , #ccfbff);
+            color: #fff;
+        } */
+    </style>
+</head>
+<body>
+    <section id="pages_p">
+        <header>
+            <div class="" id="container-1">
+                <!-- header menu start -->
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/images/edu-vista-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div>
+                        <a class="" href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="about.html">About</a>
+                    </div>
+                    <div>
+                        <a href="course.html">Courses</a>
+                    </div>
+                    <div>
+                        <a href="#">Pages <i class="fi-rr-angle-small-right"></i></a>
+                    </div>
+                    <div>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="register">
+                    <div>
+                        <a href="#">Login</a>
+                    </div>
+                    <div>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <!-- header manu end -->
+            </div>
+            
+        </header>
+        <!-- header end -->
+    </section>
+    <div id="container-2">
+        <div class="tag">
+            <h1>Pricing Plans</h1>
+            <p>home <i class="fa-solid fa-arrow-right" style="color:  #9683EC;"></i> Pricing</p>
+        </div>
+        <div class="body-section-1">
+            <h1>Choose The Best Plans</h1>
+            <p>The customer is very important, the customer will be followed by the customer. But for pain, euismod nor ullamcorper tempor, the greatest ferment time.</p>
+        </div>
+        <div class="plans">
+            <div class="plans-1">
+                <h1>Basic Package</h1>
+                <p>The customer is very important, the customer will be followed by the customer.</p>
+                <p><span style="color:#9683EC;font-weight: 500;font-size: 60px;">$ 39.99</span>/product</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>No Monthly fees</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Unlimited Course</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Monthly Workshop</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>24/7 Support</p>
+                <a href="#"><button>Get Started</button></a>
+            </div>
+            <div class="plans-1">
+                <h1>Regular Package</h1>
+                <p>The customer is very important, the customer will be followed by the customer.</p>
+                <p><span style="color:#9683EC;font-weight: 500;font-size: 60px;">$ 49.99</span>/product</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>No Monthly fees</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Unlimited Course</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Monthly Workshop</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>24/7 Support</p>
+                <a href="#"><button>Get Started</button></a>
+            </div>
+            <div class="plans-1">
+                <h1>Premium Package</h1>
+                <p>The customer is very important, the customer will be followed by the customer.</p>
+                <p><span style="color:#9683EC;font-weight: 500;font-size: 60px;">$ 59.99</span>/product</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>No Monthly fees</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Unlimited Course</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>Monthly Workshop</p>
+                <p><span><i class="fa-solid fa-check" style="color:#9683EC"></i> </span>24/7 Support</p>
+                <a href="#"><button>Get Started</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="container-3">
+        <div class="body-section-3">
+            <div class="get_in_touch">
+                <h1>Get In Touch</h1>
+                
+
+            </div>
+            <div class="get-in-touch-form">
+
+            </div>
+
+        </div>
+    </div>
+   
+         <!-- </section> -->
+    <div class="contact-section">
+        <h1>Ready to start learning ?Contact us!</h1>
+    <p>Two-line paragraph goes here. Lorem ipsum dolor sit amet, consectetur 
+        <br> wait for done adipiscing elit.</p>
+    <div class="btn-container">
+        <a href="#" class="btn"><i class="fa-solid fa-phone"></i>&nbsp;Contact Us</a>
+        <a href="#" class="btn btn-email"><i class="fa-solid fa-envelope"></i>&nbsp;Send Email</a>
+    </div>
+</div>
+    <!-- Get in touch section Ends -->
+</body>
+</html>
